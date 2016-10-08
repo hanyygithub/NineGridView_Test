@@ -24,7 +24,7 @@ public class NineGridlayout extends ViewGroup {
      */
     private int gap;
     private int columns;//
-    private int rows;//
+    private int rows;
     private int totalWidth;
     private Context context;
     int singleWidth = 0, singleHeight = 0;
@@ -60,7 +60,7 @@ public class NineGridlayout extends ViewGroup {
         if (adapter == null) {
             return;
         }
-        //初始化布局形状
+        //初始化布局
         generateChildrenLayout(adapter.getCount());
         //这里做一个重用view的处理
 //        if (oldCount == 0) {
